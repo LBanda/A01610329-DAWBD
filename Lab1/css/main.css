@@ -1,7 +1,48 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
 }
+
+header {
+    background-color: #4addb1;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+  }
+
+h1,h2,strong{
+  color: #333;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
 
 header{
     color: aqua;
+}
+
+img{
+    padding-left: 5em;
+    padding-top: 2em;
+    width: 80%;
+}
+
+#Presentacion{
+    font-size: large;
+    text-align: justify;
+}
+
+.info{
+    text-align: center;
 }
