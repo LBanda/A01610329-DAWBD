@@ -37,3 +37,28 @@ document.write('2:Entrada: Usando un prompt se pide el resultado de la suma de 2
 document.write('3:Función: contador. Parámetros: Un arreglo de números. Regresa: La cantidad de números negativos en el arreglo, la cantidad de 0s, y la cantidad de valores mayores a 0 en el arreglo.<br>');
 
 
+function parametros() {
+
+	let arrnum = new Array();
+    for(j = 0; j < 6; j++){
+        arrnum[j] = window.prompt('Escribe un numero para el arreglo');
+    }
+	let neg = 0, pos = 0, ceros = 0;
+	for(i = 0; i < arrnum.length; i++) {
+		if(arrnum[i] < 0) {
+			neg++;
+		}
+		else if(arrnum[i] > 0) {
+			pos++;
+		}
+		else {
+			ceros++;
+		}
+
+        document.write('['+arrnum[i]+']');
+	}
+	document.write('Numero negativos en el arreglo ' + neg +' positivos ' + pos + ' ceros ' + ceros + '<br>');
+}
+
+parametros();
+
