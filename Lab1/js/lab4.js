@@ -62,3 +62,25 @@ function parametros() {
 
 parametros();
 
+document.write('4:Función: promedios. Parámetros: Un arreglo de arreglos de números. Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.<br>');
+
+
+function promedio(){
+	let sp = 0;
+	let arrp = [[1,2,3],[4,5,6],[7,8,9]];
+
+	for(i=0; i < 3; i++){
+		for(j=0; j < 3; j++){
+			sp += arrp[i][j];
+		}
+		sp = sp/3;
+		document.write('Promedio renglon ' + i + ': ' + sp + '<br>');
+		sp = 0;
+	}
+	
+}
+
+promedio();
+
+
+
